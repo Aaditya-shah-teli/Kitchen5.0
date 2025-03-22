@@ -71,6 +71,11 @@ input:focus {
   padding: 10px;
   text-align: center;
 }
+.card-body a {
+  display: block;
+  margin-bottom: 15px;
+
+}
 
 .category {
   color: #a1a1a1;

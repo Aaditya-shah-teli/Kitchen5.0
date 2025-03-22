@@ -5,7 +5,10 @@ const RecipeCard = ({ recipe }) => {
         strMeal,
         strCategory,
         strMealThumb,
+        strYoutube
+
     } = recipe;
+    console.log(recipe);
     
     return (
         <div className="card">
@@ -19,6 +22,7 @@ const RecipeCard = ({ recipe }) => {
                 <h3>{strMeal}</h3>
                 <a href={"https://www.themealdb.com/meal/" + idMeal} target="_blank">Instructions</a>
             </div>
+            <a id="yt" href={strYoutube} style={{ margin: "10px 0"}}>Watch on youtube</a>
         </div>
     )
 };
